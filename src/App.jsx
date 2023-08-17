@@ -18,8 +18,8 @@ function App() {
   }
   return (
     <>
-      {/*<Form onNombre={suNombre} onColor={suColor} />*/}
-      <Card/>
+      <Form onNombre={suNombre} onColor={suColor} />
+      {elNombre ? <Card>{elColor}{elNombre}</Card> : undefined}
     </>
   );
 }
